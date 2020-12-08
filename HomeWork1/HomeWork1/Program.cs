@@ -37,7 +37,7 @@ namespace HomeWork1
                     }
                     else
                     {
-                        Console.WriteLine("Не верно :( \nНастоящая дата начала войны " + CorrectDate.ToString("d"));
+                        Console.WriteLine("Ошибка :( \nНастоящая дата начала войны " + CorrectDate.ToString("d"));
                     }
                     break;
                 case 3:
@@ -68,7 +68,7 @@ namespace HomeWork1
                     }
                     else
                     {
-                        Console.WriteLine("Неверно рассчитано :( \nПравильный результат= " + Expexcted);
+                        Console.WriteLine("Ошибка :( \nПравильный результат = " + Expexcted);
                     }
                     break;
             }
