@@ -1,0 +1,2 @@
+SELECT fio FROM marks JOIN students USING(student_id) WHERE(course_id=1 AND mark=5)
+SELECT COUNT(*) AS COUNT FROM marks JOIN students USING(student_id) WHERE(course_id=1 AND mark=5)
