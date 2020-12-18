@@ -1,0 +1,322 @@
+<!DOCTYPE HTML> 
+<html lang="en"> 
+<head> 
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<meta content="width=480" name="viewport" id="viewport">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="./js/script.js"></script>
+	<title>Version 2.0</title> 
+</head> 
+<body>
+	<div id="modal1" class="modal">
+		<p class="modal__offer" id='modal_name'></p>
+		<input type="text" class="input_name" name='input_name' placeholder="Ваше имя">
+		<input type="text" class="input_phone" name='input_phone' placeholder="Телефон">
+		<input type="email" class="input_mail" name='input_mail' placeholder="Электронная почта">
+		<span class="error"></span>
+		<button class="button modal__button" id="btnsend1" onclick="send('#btnsend1')">Отправить</button>
+		<p class="modal_confidence">Мы с вами свяжемся в ближайшее время</p>
+		<div id="close" class="modal__close"></div>
+	  </div>
+	  <div class="bg_layer"></div>
+	<div class="wraper">
+		<header class="header">
+			<div class="header-logo">
+			</div>
+			<div class="btn-mobile">
+				
+			</div>
+			<div class="header-menu">
+				<ul class="header-menu-list">
+					<li class="header-menu-list__item"><a href="#hr1" id="menu1" class="hedaer-menu-list-link">Главная</a></li>
+					<li class="header-menu-list__item"><a href="#hr2" id="menu2" class="hedaer-menu-list-link">О нас</a></li>
+					<li class="header-menu-list__item"><a href="#hr3" id="menu3" class="hedaer-menu-list-link">Курсы</a></li>
+					<li class="header-menu-list__item"><a href="#hr4" id="menu4" class="hedaer-menu-list-link">Отзывы</a></li>
+					<li class="header-menu-list__item"><a href="#hr5" id="menu5" class="hedaer-menu-list-link">Контакты</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="main">
+			<div class="main-label">
+				<span class="main-label__item">
+					Главная
+				</span>
+				<div class="label-line">
+					<div class="label-line__item">
+						
+					</div>
+				</div>
+			</div>
+			<div class="main-photo">
+				<img class="main-photo__item" src="./img/photo1.png" alt="">
+			</div>
+			<div class="main-text">
+				<div class="main-text__item">
+					<div class="main-title">
+						<span class="main-title__item">
+						Школа современной<br>фотографии 
+						</span>
+					</div>
+					<div class="main-subtitle">
+						<button onclick="modal('Записаться на пробное занятие','#bttn1')" id="bttn1" class="main-subtitle__item">
+							Начни снимать прямо сейчас!
+						</button>
+					</div>
+				</div>		
+			</div>
+		</div>
+		<div class="about-block" id="hr2">
+			<div class="about-first">
+				<div class="about-text">
+					<div class="about-title">
+						<span class="about-title__item">
+							О нас
+						</span>
+					</div>
+					<div class="about-discription">
+						<span class="about-discription__item">
+							VERSION 2.0 - уникальный образовательный проект
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="about-information">
+				<div class="about-menu">
+					<ul class="about-menu-list">
+						<li class="about-menu-list__item">
+							<div class="list-image list-image_kurs"></div>
+							<div class="list-title">Курсы</div>
+							<div class="list-information">Большой выбор направлений обучения для новичков и профессионалов</div>
+						</li>
+						<li class="about-menu-list__item mt-50">
+							<div class="list-image list-image_skill"></div>
+							<div class="list-title">С нуля</div>
+							<div class="list-information">Возможность стартовать с любого уровня. Даже если у Вас нет никаких знаний о фотографии</div>
+						</li>
+						<li class="about-menu-list__item mt-100">
+							<div class="list-image list-image_practic"></div>
+							<div class="list-title">Практика</div>
+							<div class="list-information">Занятия с моделями в студии с использованием профессионального оборудования</div>
+						</li>
+					</ul>
+				</div>
+				<div class="about-label">
+					<div class="label-line__item label-line__item_top">
+					</div>
+					<span class="about-label__item">
+						О нас
+					</span>
+					<div class="label-line">
+					<div class="label-line__item label-line__item_bottom">
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="kurs" id="hr3">
+			<div class="kurs-invite">
+				<div class="kurs-add">
+					Первое занятие бесплатно!
+				</div>
+				<button onclick="modal('Записаться на пробное занятие','#bttn2')" id="bttn2" class="kurs-invite__button">
+					Записаться!
+				</button>
+			</div>
+			<div class="kurs-basics">
+				<div class="basic-item">
+					<div class="kb-label">
+						<span class="kb-label__item">
+							Основы <br>фотографии
+						</span>
+					</div>
+					<div class="kb-information">
+						<span class="kb-information__item">
+							Курс для начинающих фотографов и для тех, кто имеет небольшой опыт. Вы узнаете как делать технически и композиционно правильные снимки, узнаете о различных жанрах и тендециях современной фотографии.
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="kurs-adv">
+				<div class="more-kurs">
+					<div class="more-kurs-logo">
+						
+					</div>
+				<div class="more-kurs-text">
+					<div class="more-kurs-title">
+						<div class="more-kurs-title__item">Еще курсы</div>
+					</div>
+					<div class="more-kurs-information">
+						<div class="more-kurs-information__item">Большое количество курсов, которые позволят Вам пройти путь от новичка до коммерчески успешного фотографа со своим уникальным стилем</div>
+					</div>
+				</div>
+				</div>
+				<div class="kurs-target">
+					<div class="kurs-target-content">
+						<div class="kurs-target-logo">
+							
+						</div>
+						<ul class="kurs-target-list">
+							<li class="kurs-target-list__item">
+								<div class="kt-list-image kt-list-image_top">
+									<div class="kt-list-label">
+										<div class="kt-list-title">
+											Студийный свет
+										</div>
+										<div class="kt-list-information">
+											Все о свете и студийном оборудовании
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="kurs-target-list__item">
+								<div class="kt-list-image kt-list-image_bottom">
+									<div class="kt-list-label">
+										<div class="kt-list-title">
+											Photoshop & lightroom
+										</div>
+										<div class="kt-list-information">
+											Все о ретуши и цветокоррекции 
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="feedback" id="hr4">
+			<div class="feedback-label">
+					<div class="label-line__item label-line__item_top label-line__item_top-f">
+					</div>
+					<span class="feedback-label__item">
+						Отзывы
+					</span>
+					<div class="label-line__item label-line__item_bottom label-line__item_bottom-f ">
+					</div>
+			</div>
+			<div class="comments">
+				<div class="comments-item">
+					<div class="comment-title">
+						Отзывы
+					</div>
+					<div class="comment-information">
+						"Спасибо за курс основы фотографии! Я получил большой заряд энергии и желание развиваться в этом направлении!"- Михаил<br><br>
+						"Прошла курс основы фотографии. Очень понравилось! Много практики, доброжелательная и творческая атмосфера."- Виктория<br><br>
+						"Очень понравилось! Ни разу не пожалела, что записалась. Все очень понятно, а главное много практики"- Марина
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="question" id="hr5">
+			<div class="question-form">
+				<form class="question-form__item" action="url">
+					<div class="qf-title">
+						<span class="qf-title__item"> Записаться на бесплатное пробное занятие</span>
+					</div>
+					<div class="cells">
+						<div class="cell-form cell-form_name">
+							<label for="qf1n">Имя</label>
+							<input id="qf1n" class="qf-input qf-input_name" type="text">
+						</div>
+						
+						<div class="cell-form cell-form_number">
+							<label for="qf2n">Номер телефона</label>
+							<input id="qf2n" class="qf-input qf-input_number" type="text">
+						</div>
+						<div class="cell-form cell-form_question">
+							<label for="qf3n">E-mail</label>
+							<input id="qf3n" class="qf-input  qf-input_question" type="text">
+						</div>
+					</div>
+					<button class="qf-input-button" type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+		<div id="toTop"></div>
+		<footer class="footer">
+			<div class="footer-content">
+				<ul class="footer-list">
+					<li class="footer-list__item">
+						<div class="footer-logo">
+							
+						</div>
+					</li>
+					<li class="footer-list__item footer-list__item_c">
+						<div class="footer-contacts">
+							<div class="fc-title">
+								<span class="fc-title__item">
+									Контакты
+								</span>
+							</div>
+							<div class="fc-number">
+								<a class="fc-number__item" href="tel:89999999999">
+									+7(996)-582-54-85
+								</a>
+							</div>
+							<div class="fc-information">
+								<span class="fc-information__item">
+									
+								</span>
+							</div>
+						</div>
+					</li>
+					<li class="footer-list__item footer-list__item_s">
+						<ul class="social-ico">
+							<a class="social-ico__item social-ico__item_vk" href=""></a>
+							<a class="social-ico__item social-ico__item_inst" href=""></a>
+							<a class="social-ico__item social-ico__item_wp" href=""></a>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mask.js"></script>
+<script>
+    jQuery(function ($) {
+      $.mask.definitions['~'] = '[+-]';
+      $('.input_phone').mask('+7 (999) 999-9999');
+    });
+    $(document).ready(function () {
+      $('.modal, .bg_layer').hide();
+
+    });
+
+    function modal(name, btn) {
+      $(btn).click(function () {
+        $('.modal, .bg_layer').show();
+        $('#modal_name').text(name);
+        $("#close").click(function () {
+          $('.modal, .bg_layer').hide();
+        });
+      });
+    }
+
+    function send(id) {
+      $(id).click(function () {
+        var name = $('.input_name').val();
+        var phone = $('.input_phone').val();
+        var mail = $('.input_mail').val();
+        $('.error').remove();
+        if (name.length == '') {
+          // $('.error').val()='Введите имя';
+          $('.input_name').before('<span class="error" >Введите имя</span>')
+        }
+        if (phone.length < 10) {
+          $('.input_phone').before('<span class="error" >Введите номер</span>')
+        }
+        if (mail.length < 5) {
+          $('.input_mail').before('<span class="error" >Введите почту</span>')
+        }
+      });
+    }
+</script>
+</body> 
+</html>
