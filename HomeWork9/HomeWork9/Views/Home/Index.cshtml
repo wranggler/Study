@@ -1,0 +1,24 @@
+﻿@model IEnumerable<HomeWork9.ViewModels.StudentsView>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Студенты</h1>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>ФИО</th>
+        </tr>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.Id</td>
+                <td>@student.FIO</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
